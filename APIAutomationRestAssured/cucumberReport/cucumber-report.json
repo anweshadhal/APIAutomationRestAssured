@@ -1,0 +1,89 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Anwesha Dhal"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 14,
+        "name": "To get the exchange rate of all countries",
+        "description": "",
+        "id": "to-verify-the-exchange-rate-of-all-countries;to-get-the-exchange-rate-of-all-countries;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 314501601,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "with the end point URL",
+            "match": {
+              "location": "ExchangeRateSteps.with_the_end_point_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6310655701,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "request send with base code",
+            "match": {
+              "location": "ExchangeRateSteps.request_send_with_base_code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60086500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the \"200\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "ExchangeRateSteps.verify_the_in_step(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@ExchangeRate"
+          },
+          {
+            "line": 6,
+            "name": "@getAllcountriesExchangeRate"
+          }
+        ]
+      }
+    ],
+    "name": "To verify the exchange rate of all countries",
+    "description": "User wants to see the exchange rate of all countries",
+    "id": "to-verify-the-exchange-rate-of-all-countries",
+    "keyword": "Feature",
+    "uri": "src/test/resources/ExchangeRateAPI.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@ExchangeRate"
+      }
+    ]
+  }
+]
