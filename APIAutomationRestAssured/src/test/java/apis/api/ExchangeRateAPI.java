@@ -19,14 +19,14 @@ import static net.serenitybdd.rest.SerenityRest.*;
 public class ExchangeRateAPI {
 	
 	
-//	public String projectLocation=System.getProperty("user.dir");
-//	
-//	File file = new File(projectLocation+"\\serenity.properties");
-//	
-//	FileInputStream fileInput = null;
-//	Properties prop = new Properties();
+	public String projectLocation=System.getProperty("user.dir");
+	
+	File file = new File(projectLocation+"\\serenity.properties");
+	
+	FileInputStream fileInput = null;
+	Properties prop = new Properties();
 	Response res;
-//	public String url=null;
+	public String url=null;
 	
 	public static final EnvironmentVariables variable = SystemEnvironmentVariables.createEnvironmentVariables();
 	String url1;
@@ -37,29 +37,29 @@ public class ExchangeRateAPI {
 		System.out.println("the URL1 is: "+url1);
 	}
 	
-//	public void loadPropertyFile()
-//	{
-//		try {
-//			fileInput = new FileInputStream(file);
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		
-//		//load properties file
-//		try {
-//			prop.load(fileInput);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
+	public void loadPropertyFile()
+	{
+		try {
+			fileInput = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		//load properties file
+		try {
+			prop.load(fileInput);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-//	public void getEndPointURL() {
-//		
-//	loadPropertyFile();		
-//	url=prop.getProperty("Exchange.rate.get");
-//	System.out.println("The end point URL is: "+url);
-//	}
+	public void getEndPointURL() {
+		
+	loadPropertyFile();		
+	url=prop.getProperty("Exchange.rate.get");
+	System.out.println("The end point URL is: "+url1);
+	}
 	
 
 	public void getExchangeRates() {

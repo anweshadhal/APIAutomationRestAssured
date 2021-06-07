@@ -46,4 +46,13 @@ test {
     systemProperties System.getProperties()
 }
 
+
+task runExchangeRateAPI(type: Test) {
+	testLogging.showStandardStreams=true
+	systemProperties System.getProperties()
+	exclude('**/Library.java')
+	include "**/runners/ExchangeRateRunner.class"
+}
+
+
 gradle.startParameter.continueOnFailure = true
